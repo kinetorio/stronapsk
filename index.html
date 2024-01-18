@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nysa - Perła Opolszczyzny</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <header>
+        <h1>Witamy w Nysie!</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#atrakcje">Atrakcje</a></li>
+                <li><a href="#galeria">Zabytki</a></li>
+            </ul>
+        </nav>
+        <div id="datetime"></div>
+        <script>
+            function updateDateTime() {
+                var now = new Date();
+                var datetime = now.toLocaleString('pl-PL');
+                document.getElementById('datetime').innerHTML = datetime;
+            }
+        
+            setInterval(updateDateTime, 1000);
+            updateDateTime(); 
+        </script>
+        
+    </header>
+
+    <section id="historia">
+        <h2>Historia Nysy</h2>
+        <p>Nysa – miasto w Polsce położone w województwie opolskim, w powiecie nyskim, siedziba gminy miejsko-wiejskiej Nysa. Historycznie leży na Dolnym Śląsku, na pograniczu Przedgórza Sudeckiego i Niziny Śląskiej, w południowo-zachodniej części Doliny Nysy Kłodzkiej. Przepływa przez nie rzeka Nysa Kłodzka. W pobliżu Nysy znajdują się sztuczne zbiorniki wodne: Jezioro Nyskie (zwane także Jeziorem Głębinowskim), nieco dalej Jezioro Otmuchowskie.</p>
+    
+        <p>W latach 1975–1998 miasto administracyjnie należało do województwa opolskiego. Według danych na 30 czerwca 2018 miasto było zamieszkane przez 44 243 osoby. Nysa jest jednym z najstarszych miast śląskich. Prawdopodobnie już w X wieku istniała tu osada. Według Jana Długosza Nysę jako gród miał założyć Bolesław Krzywousty.</p>
+    
+        <p>Jednak nie odgrywał on wówczas większej roli, gdyż nadgraniczna kasztelania znajdowała się w pobliskim Otmuchowie. Sytuacja zmieniła się, gdy książę Bolesław I Wysoki ofiarował swemu synowi Jarosławowi kasztelanię otmuchowską wraz z przylegającymi do niej dobrami. Jarosław, który w latach 1198–1201 był biskupem wrocławskim, przekazał w testamencie swoim następcom na stolicy biskupiej Nysę i kilkanaście wsi. Z czasem na tej bazie utworzono biskupie księstwo nysko-otmuchowskie, które sukcesywnie powiększało się, a Nysa stała się jego stolicą.</p>
+    
+        <p>W 1198 r. biskup Jarosław miał konsekrować kościół św. Jakuba i św. Agnieszki. Nie wiadomo, czy była to pierwsza nyska świątynia, ponieważ źródła z 1240 r. wymieniają kościół św. Jana Chrzciciela na Starym Mieście, patrona diecezji wrocławskiej, który umieszczony był w najstarszym herbie miejskim.</p>
+    
+        <p>Nysa po raz pierwszy była wzmiankowana w 1223 roku, kiedy to została lokowana na prawie flamandzkim (w 1308 r. została przeniesiona na prawo magdeburskie). Z początkiem XIV wieku, wedle życzenia Henryka Probusa, stała się miastem stołecznym księstwa nyskiego. Utworzone przez niego księstwo nyskie do 1810 r. (sekularyzacja dóbr kościelnych przez króla pruskiego Fryderyka Wilhema III) rozrastało się pod względem terytorialnym, ludnościowym i prawnym, gdyż posiadało i stanowiło swe własne prawa, np. prawo warzenia piwa czy prawo mili.</p>
+    </section>
+    
+
+    <section id="atrakcje">
+        <h2>Atrakcje Nysy</h2>
+        <h3>Wydarzenia sportowe w Hali Nysa</h3>
+        <img src="images/hala.png" alt="Hala nysa">
+        <p>Hala Nysa to nowoczesny obiekt sportowy, który jest areną emocjonujących meczów siatkarskiej drużyny Stal Nysa. Regularnie odbywają się tutaj zawody na wysokim poziomie, przyciągając fanów siatkówki z całego regionu. Hala jest także miejscem innych wydarzeń sportowych i kulturalnych, stanowiąc ważny punkt na mapie atrakcji miasta Nysa.</p>
+    
+        <h3>Jezioro Nyskie</h3>
+        <img src="images/jezioro.jpg" alt="Jezioro Nyskie">
+        <p>Jezioro Nyskie, znane również jako Jezioro Głębinowskie, to popularne miejsce wypoczynku zarówno dla mieszkańców, jak i turystów. Oferuje szeroki wachlarz aktywności na świeżym powietrzu, takich jak żeglarstwo, kajakarstwo czy wędkarstwo. Otoczone malowniczymi krajobrazami, Jezioro Nyskie jest idealnym miejscem na rodzinne pikniki, spacery czy relaks na plaży.</p>
+    
+        <h4>Dni Nysy</h4>
+        <img src="images/dni.png" alt="Dni Nysy">
+        <p>Dni Nysy to okazja do świętowania i integrowania społeczności w tym malowniczym mieście. Podczas tych wydarzeń, mieszkańcy oraz turyści mają okazję uczestniczyć w różnorodnych atrakcjach, takich jak festiwale, koncerty, jarmarki, czy parady. Dni Nysy często odzwierciedlają bogatą historię i kulturę regionu, a jednocześnie pozwalają na aktywne spędzanie czasu w przyjaznej atmosferze. To również doskonała okazja do poznawania lokalnych tradycji, smakowania regionalnych potraw i cieszenia się z wspólnotowego ducha, który charakteryzuje to wyjątkowe miasto.
+    </section>
+    
+
+    <section id="galeria">
+        <h2>Zabytki</h2>
+        <div class="gallery-container">
+            <figure>
+                <a href="katedra.html">
+                <img src="images/katedra.jpg" alt="Katedra w Nysie">
+                <figcaption>Katedra w Nysie</figcaption></a>
+            </figure>
+            <figure>
+                <a href="dom.html">
+                <img src="images/dom.jpg" alt="Dom Macierzysty Zgromadzenia Sióstr św. Elżbiety">
+                <figcaption>Dom Macierzysty Zgromadzenia Sióstr św. Elżbiety</figcaption></a>
+            </figure>
+            <figure>
+                <a href="fontanna.html">
+                <img src="images/fontanna.jpg" alt="Fontanna Trytona">
+                <figcaption>Fontanna Trytona</figcaption></a>
+            </figure>
+            <figure>
+                <a href="kosciol.html">
+                <img src="images/kosciol.jpg" alt="Kościół Piotra i Pawła w Nysie">
+                <figcaption>Kościół Piotra i Pawła w Nysie</figcaption></a>
+            </figure>
+            <figure>
+                <a href="palac.html">
+                <img src="images/palac.jpg" alt="Pałac biskupi">
+                <figcaption>Pałac biskupi</figcaption></a>
+                
+            </figure>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Nysa</p>
+    </footer>
+</body>
+</html>
